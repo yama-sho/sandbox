@@ -16,4 +16,4 @@ deployment:
   appengine:
     branch: master
     commands:
-      - gcloud app deploy
+      - gcloud -q app deploy app.yaml
