@@ -1,6 +1,9 @@
 machine:
   python:
     version: 2.7.12
+  environment:
+    # Add app engine sdk to pythonpath for local unit tests.
+    PYTHONPATH: ${PYTHONPATH}:${HOME}/server/lib
 dependencies:
   pre:
     - echo $GCLOUD_SERVICE_KEY | base64 --decode > ${HOME}/gcloud-service-key.json
