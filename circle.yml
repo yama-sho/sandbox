@@ -15,8 +15,7 @@ dependencies:
     - mkdir -p lib
     - dir
     - pip install -r requirements.txt -t lib
-    - cd lib
-    - dir
+    - cd lib&&dir
 
 deployment:
   appengine:
