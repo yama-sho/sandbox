@@ -2,8 +2,6 @@
 # -*- coding: UTF-8 -*-
 #
 from flask import Flask, jsonify
-import sys
-sys.path.append('/lib')
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
