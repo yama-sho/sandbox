@@ -12,7 +12,7 @@ dependencies:
     - sudo /opt/google-cloud-sdk/bin/gcloud config set project $GCLOUD_PROJECT
     - sudo chmod -R 757 /home/ubuntu/.config/gcloud/logs
     - sudo chmod -R 757 /home/ubuntu/.config/gcloud/credentials
-    - mkdir -p lib
+    - mkdir -p ./lib
     - dir
     - pip install -r requirements.txt -t lib
     - cd lib&&dir
@@ -21,4 +21,4 @@ deployment:
   appengine:
     branch: master
     commands:
-      - gcloud -q app deploy app.yaml --promote
+      - gcloud -q app deploy app.yaml
