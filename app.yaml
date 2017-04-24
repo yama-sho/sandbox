@@ -8,5 +8,5 @@ libraries:
 
 handlers:
 
-- url: /todo/(.*)
+- url: .*
   script: rest_api.app
