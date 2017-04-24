@@ -13,7 +13,10 @@ dependencies:
     - sudo chmod -R 757 /home/ubuntu/.config/gcloud/logs
     - sudo chmod -R 757 /home/ubuntu/.config/gcloud/credentials
     - mkdir -p lib
+    - dir
     - pip install -r requirements.txt -t lib
+    - cd lib
+    - dir
 
 deployment:
   appengine:
